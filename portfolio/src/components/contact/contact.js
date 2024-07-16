@@ -15,6 +15,8 @@ const Contact = () => {
           .then(
             () => {
               console.log('SUCCESS!');
+              e.target.reset();
+              alert('Email Sent!');
             },
             (error) => {
               console.log('FAILED...', error.text);
@@ -26,8 +28,8 @@ const Contact = () => {
             <h1 className="contactPageTitle">Contact Me</h1>
             <span className="contactDesc">Please fill out the form below to discuss any work opportunities.</span>
             <form className='contactForm' ref={form} onSubmit= {sendEmail}>
-                <input type="text" name="your_name" className='name' placeholder='Your Name'/>
-                <input type="email" name="your_email"className='email' placeholder="Your Email"/>
+                <input type="text" name="from_name" className='name' placeholder='Your Name'/>
+                <input type="email" name="from_email"className='email' placeholder="Your Email"/>
                 <textarea name="message" className="msg" rows="5" placeholder="Your Message"></textarea>
                 <button type='submit' value='Send' className="submitBtn">Submit</button>
             </form>
