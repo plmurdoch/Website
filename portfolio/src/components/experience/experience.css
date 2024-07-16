@@ -1,0 +1,66 @@
+#work{
+    overflow:hidden;
+    width:100vw;
+    max-width:65rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin:0 auto;
+}
+
+.workTitle{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.workBars{
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+}
+
+.workBar{
+    display:flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: white;
+}
+
+
+.workBarText>p{
+    color:black;
+    font-size: 0.9rem;
+    font-weight: 200;
+
+}
+
+.workBarText>h2{
+    color: black;
+    font-weight: 200;
+}
+
+@media screen and (max-width:720px){
+    .workBarText>p{
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width:480px){
+    .workBarText>p{
+        font-size: 3vw;
+    }
+    .workBarImg{
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+    .workBarText>h2{
+        font-size: 5vw;
+    }
+}
