@@ -13,7 +13,9 @@ const intro = () => {
                 <span className="introText">and Information Security</span> <br/>
                 </span>
                 <p className='introPara'>I am a Masters student at UVic looking to develop my professional portfolio.<br/> I hope to pursue a career in Software Development and Cyber-Security.</p>
-                <Link><button className="btn"><img src={btnImg} alt='btnImg' className='btnImg'/>Employ Me</button></Link>
+                <Link><button className="btn"onClick={()=>{
+                document.getElementById('contact').scrollIntoView({behavior:"smooth"});
+                }}><img src={btnImg} alt='btnImg' className='btnImg'/>Employ Me</button></Link>
             </div>
         </section>
     )
